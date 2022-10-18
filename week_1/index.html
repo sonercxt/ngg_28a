@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>NGG 28A Omer Naz profile page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="profile-photo-container">
+          <img src="./pictures/omer_naz.jpg" alt="profile_photo" id="profile-photo" />
+        </div>
+        <div id="profile-introduce">
+          <p class="animate__animated animate__backInDown profile-introduce-paragraph">Welcome to My Page</p>
+          <p class="animate__animated animate__backInLeft animate__delay-1s profile-introduce-paragraph">Omer Naz</p>
+          <p class="animate__animated animate__backInRight animate__delay-1s profile-introduce-paragraph">Full Stack Developer</p>
+        </div>
+      </header>
+      <section id="main-container">
+        <nav>
+          <ul>
+            <li><button type="button" id="about-me-button" onclick="handleClickAbout()">About me</button></li>
+            <li><button type="button" id="quiz-button" onclick="handleClickQuiz()">Quiz</button></li>
+            <li><button type="button" id="contact-button" onclick="handleClickContact()">Contact</button></li>
+          </ul>
+        </nav>
+        <section class="main-content">
+          <div id="about-me">
+            <h1 class="primary-title">About me</h1>
+            <article>
+              <p>
+                I am an enthusiastic Developer with a passion for software and technology. I have finished first 6 months of "Full Stack Web Development"
+                course. I am very interested in enhance my IT knowledge, learn new technologies and especially artificial intelligence. I find myself as
+                flexible, compatible and agile in teamwork.
+              </p>
+            </article>
+
+            <article>
+              <h3>My favorite Hobbies</h3>
+              <details>
+                <summary>Click to see my hobbies</summary>
+                <ul>
+                  <li>Playing tennis</li>
+                  <li>Walking in the nature</li>
+                  <li>Playing chess</li>
+                </ul>
+              </details>
+
+              <a href="https://cdn.dribbble.com/users/2832452/screenshots/6833602/happydog.jpg" target="_blank">Click here to see a picture of my dog Max!</a>
+            </article>
+
+            <article>
+              <h3>My Favorite Songs</h3>
+
+              <table>
+                <caption>
+                  My top 5 favorite songs
+                </caption>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Song Title</th>
+                    <th>Singer</th>
+                    <th>Genre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Imagine</td>
+                    <td>John Lennon</td>
+                    <td>Soft rock</td>
+                  </tr>
+
+                  <tr>
+                    <th>2</th>
+                    <td>One</td>
+                    <td>U2</td>
+                    <td>Rock</td>
+                  </tr>
+
+                  <tr>
+                    <th>3</th>
+                    <td>Dancing queen</td>
+                    <td>ABBA</td>
+                    <td>Europop</td>
+                  </tr>
+
+                  <tr>
+                    <th>4</th>
+                    <td>Yesterday</td>
+                    <td>The Beatles</td>
+                    <td>Chamber pop</td>
+                  </tr>
+
+                  <tr>
+                    <th>5</th>
+                    <td>Hallelujah</td>
+                    <td>Jeff Buckley</td>
+                    <td>Folk-rock</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+
+            <section id="my-video">
+              <h3>Video I took on my last Holiday</h3>
+              <iframe
+                width="420"
+                height="315"
+                src="https://www.youtube.com/embed/E4uvNkm_1FI"
+                title="Dolomites Mountain in Italy | Best Travel Destinations"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </section>
+          </div>
+
+          <div id="quiz">
+            <h1 class="primary-title">Take a Quiz About Me</h1>
+            <form id="form-quiz">
+              <div>
+                <label for="favorite-animal">1- What's my favorite Animal?</label>
+                <select name="favorite-animal" id="favorite-animal">
+                  <option value="cat">Cat</option>
+                  <option value="giraffe">Giraffe</option>
+                  <option value="dog">Dog</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="favorite-animal">2- When's my Birthday?</label>
+                <input type="date" />
+              </div>
+
+              <div>
+                <label for="favorite-animal">3- What's my favorite Color?</label>
+                <input type="color" />
+              </div>
+
+              <div>
+                <label for="favorite-animal">4- What's my favorite Time of the Day?</label>
+                <input type="time" />
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="contact">
+            <h1 class="primary-title">Contact Me</h1>
+            <form>
+              <fieldset>
+                <legend>Contact me</legend>
+
+                <div class="form-example">
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="message">Message:</label>
+                  <div>
+                    <textarea id="message" name="message" aria-describedby="format" maxlength="120" rows="4"></textarea>
+                    <p id="format">It must be a maximum of 240 characters</p>
+                  </div>
+                </div>
+
+                <div id="form-submit">
+                  <button type="submit" aria-label="Submit">Submit</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
