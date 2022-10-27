@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  box-sizing: content-box;
+  background-color: rgb(240, 240, 240);
+}
+
+.visible {
+  display: block;
+}
+
+.non-visible {
+  display: none;
+}
+
+/* navbar */
+#profile-photo-container {
+  width: 300px;
+  background-color: #001530;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  top: 12vh;
+}
+
+nav {
+  width: 393px;
+  background-color: #363636;
+}
+
+#profile-photo-section {
+  height: 12rem;
+  background-color: #030303;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#profile-photo-section img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+#navbar-job {
+  margin-top: 7px;
+}
+
+nav > ul {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+  width: 100%;
+  background-color: #363636;
+  font-size: 1.5rem;
+  border: 1px solid white;
+
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 10px 10px;
+
+  color: white;
+}
+
+nav button:hover {
+  background-color: gray !important;
+  cursor: pointer;
+}
+
+/* main-container */
+
+#main-container {
+  display: flex;
+  background-color: #181818;
+  height: 100vh;
+}
+
+.main-content {
+  margin-left: 25px;
+  margin-bottom: 100px;
+  padding: 0 120px;
+  width: 100%;
+}
+
+.primary-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+/* home */
+
+#home {
+  color: white;
+}
+
+#home p {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+#home p:nth-child(4) {
+  font-size: 21px;
+  font-weight: normal;
+  opacity: 0.5;
+  margin-top: 5rem;
+}
+
+/* about  */
+#about-me {
+  color: white;
+}
+
+#cw {
+  position: fixed;
+  color: white;
+  z-index: -1;
+}
+
+/* skill */
+#my-skill {
+  color: white;
+}
+
+#my-languages progress {
+  margin-bottom: 20px;
+  color: white;
+}
+/* contact me */
+#contact {
+  color: white;
+}
+
+#contact form {
+  width: 400px;
+  padding: 20px 50px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #363636;
+  border-radius: 7px;
+}
+
+fieldset {
+  width: 350px;
+  margin: auto;
+}
+
+legend {
+  font-size: 30px;
+}
+
+.form-example {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#contact input,
+textarea {
+  width: 240px;
+  border-radius: 3px;
+  border: none;
+}
+
+#contact input {
+  height: 20px;
+}
+
+#contact label {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact p {
+  font-size: 12px;
+  color: red;
+  margin: 0;
+}
+
+#form-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact button {
+  border: none;
+  background-color: gray;
+  color: white;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 100px;
+  padding: 10px 0;
+}
+
+#contact button:hover {
+  background-color: #001530;
+  cursor: pointer;
+}
