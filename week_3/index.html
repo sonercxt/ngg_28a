@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Omer Naz profile page</title>
+  </head>
+  <body>
+    <main>
+      <section id="main-container">
+        <nav>
+          <section id="profile-photo-section" onclick="handleClickHome()">
+            <img src="./pictures/omer_naz.jpg" alt="" />
+            <p id="navbar-name">Omer Naz</p>
+            <p id="navbar-job">Full Stack Developer</p>
+          </section>
+          <ul>
+            <li><button type="button" id="about-me-button" onclick="handleClickAbout()">About me</button></li>
+            <li><button type="button" id="skill-button" onclick="handleClickSkill()">My Skills</button></li>
+            <li><button type="button" id="contact-button" onclick="handleClickContact()">Contact</button></li>
+          </ul>
+          <section id="navbar-icons">
+            <a href="https://github.com/sonercxt" target="_blank" class="animate__animated animate__bounce"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#" class="animate__animated animate__bounce"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="animate__animated animate__bounce"><i class="fa-solid fa-envelope"></i></a>
+          </section>
+        </nav>
+        <section class="main-content">
+          <div id="home">
+            <canvas id="canvas"></canvas>
+            <article>
+              <p>Hi,</p>
+              <p>I'm Omer</p>
+              <p>Web Developer</p>
+              <p>Front End / Back End Developer</p>
+            </article>
+          </div>
+
+          <div id="about-me">
+            <h1 class="primary-title">About me</h1>
+            <article>
+              <h2>Hi there!</h1>
+              <p>
+                It's Omer Naz here!
+              </p>
+              <P>
+                I was born in Turkey in 1987. I studied industrial engineering at the university. I came to Switzerland in 2020. I got full stack developer training from HiCoders IT course in Switzerland. I am currently working as a mentor in the Hicoders course. I also work as a front end / back end developer at Designbees IT association.
+              </P>
+              <p>
+                I am an enthusiastic Developer with a passion for software and technology. I completed "Full Stack Web Development"
+                course last year. I am very interested in enhance my IT knowledge, learn new technologies and especially artificial intelligence. I find myself as
+                flexible, compatible and agile in teamwork.
+              </p>
+            </article>
+          </div>
+
+          <div id="my-skill">
+            <h1 class="primary-title">My Skills</h1>
+            <article id="my-languages">
+              <h3>My Languages Information</h3>
+              <label for="file">German B1</label><br />
+              <progress id="file" value="70" max="100">70%</progress><br />
+
+              <label for="file">English B1</label><br />
+              <progress id="file" value="70" max="100">70%</progress><br />
+
+              <label for="file">Turkish (Mother Tongue)</label><br />
+              <progress id="file" value="100" max="100">100%</progress>
+            </article>
+          </div>
+
+          <div id="contact">
+            <h1 class="primary-title">Contact Me</h1>
+            <form>
+              <fieldset>
+                <legend>Contact form</legend>
+
+                <div class="form-example">
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="message">Message:</label>
+                  <div>
+                    <textarea id="message" name="message" aria-describedby="format" maxlength="120" rows="4"></textarea>
+                    <p id="format">It must be a maximum of 240 characters</p>
+                  </div>
+                </div>
+
+                <div id="form-submit">
+                  <button type="submit" aria-label="Submit">Submit</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
